@@ -1,0 +1,40 @@
+$main-bg-color: #9accdd;
+$contrast-color-light: #8e288d;
+$contrast-color-darck: #61205f;
+$nav-bg-color: #717680;
+$text-color-light: #fff;
+$text-color-black: #351a34;
+
+%default-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: $text-color-black;
+}
+
+%default-title-text {
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 2.625rem;
+}
+
+%default-hover {
+  background: radial-gradient($contrast-color-darck, $contrast-color-light);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $contrast-color-darck;
+  text-shadow: 0 0 20px $contrast-color-light, 0 0 30px $contrast-color-light,
+    0 0 40px $contrast-color-light;
+}
+
+%default-color-bg {
+  background: linear-gradient(
+    15deg,
+    rgba($main-bg-color, 0.9) 0%,
+    rgba($main-bg-color, 0.6) 40%,
+    rgba($main-bg-color, 0.7) 60%,
+    rgba($main-bg-color, 0.8) 80%,
+    rgba($main-bg-color, 0.9) 100%
+  );
+}
