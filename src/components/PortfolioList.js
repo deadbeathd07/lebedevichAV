@@ -3,6 +3,7 @@ import paralect from "../img/paralect-test.png";
 import engDiag from "../img/eng-diag.png";
 import royal from "../img/royal-feast.png";
 import quize from "../img/quize.png";
+import notes from "../img/notes.png";
 import PortfolioItem from "./PortfolioItem";
 
 function PortfolioList() {
@@ -27,16 +28,16 @@ function PortfolioList() {
       link: "https://deadbeathd07.github.io/quize/",
       key: "example_4",
     },
+    {
+      img: notes,
+      link: "https://musical-rugelach-61598f.netlify.app/",
+      key: "example_5",
+    },
   ];
   return (
     <div className="portfolio__list">
       {list.map(({ img, link, key }) => (
-        <PortfolioItem
-          img={img}
-          link={link}
-          linkText={key}
-          key={key}
-        />
+        <PortfolioItem img={img} link={link} linkText={key} key={key} />
       ))}
     </div>
   );
